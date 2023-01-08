@@ -1,0 +1,446 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* لتطبيق ستايل معين ع كل العناصر ف الصفحة */
+
+
+body{
+ background-color:  pink;
+}
+
+
+*{
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* بكون سكرول مرن اكتر */
+scroll-behavior: smooth;
+}
+
+
+
+
+/* ****************************************** */
+header{
+  background-color:pink;
+  /* بدي العرض كله يكون متاح */
+  width: 100%;
+  position: fixed;
+  /*  بنعطيها رقم عالي مشان هيدر يضل موجود وم حد يغطي عليه لما نعمل سكرول */
+  z-index: 9999;
+  display: flex;
+  /* بجعل مسافات بين العناصر */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+.logo{
+  text-decoration: none;
+  color: darkmagenta;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+nav a{ 
+  color:rgb(93, 20, 129);
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding-left: 40px;
+  }
+  nav a:hover{
+    color: blueviolet;
+  }
+/* ********************************************** */
+.main{
+  height: 650px;
+  padding: 100px 200px;
+  width: 100%;
+  /*  أقل حاجة تكون هيك القيمة */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+   background: url(../img/web88.jpg) no-repeat; 
+/* الصورة تظهر بحجمها كله  */
+background-size: cover;   
+/* الصورة تظهر ف المنتصف */
+background-position: center;
+}
+
+.main h2{
+  color: pink;
+  font-size: 3.5em;
+    font-weight: 800;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+.main h3{
+  color: pink;
+  font-size: 2em;
+  padding-left: 120px;
+  font-weight: 500;
+  /* المسافات بين الحروف بين الكلمات وبين الجمل */
+  letter-spacing: 1px;
+}
+
+/* ******************************** **************/
+      /* About Us */
+      .About_me{
+        padding-top: 40px;
+     
+        background-color:pink;
+      } 
+      .heading{
+        /* عملناها فليكس لانها بلوك ايملنت وبدنا اياها تيحي ف نص */
+        display: flex;
+        justify-content: center;
+        font-size: 2.2em;
+        font-weight: 800;
+        margin: 6px;
+        padding-bottom: 15px;
+        color: darkmagenta;
+    }
+      .About_me .all{
+        display: flex;
+         justify-content:center;
+       align-items: center;
+    }
+      
+    .About_me .all .hp{
+      margin-left: 80px;
+      margin-bottom: 130px;
+     
+    }
+    .About_me .all .hp p{
+      
+       line-height: 4;
+       font-weight: bolder;
+      font-size: larger;
+      padding-top: 90px;
+      word-spacing: 2;
+     }
+     .image-one{
+      margin-left: 20px;
+    }
+      /* .about_us .all .image-one img{
+        max-width: 600px;
+      } */
+    /**************************************************  */
+   hr{
+      height: 5px;
+      background-color: darkmagenta;
+     }
+     /* ******************************************** */
+     .My_skills{
+      padding-top: 15px ; 
+     }
+          
+          .My_skills h2{
+           margin-top: 50px;
+          }
+        
+          .container{
+            display: flex;
+            justify-content:center;
+            flex-direction: row;
+            flex-wrap: wrap; 
+            }
+
+            .texts{
+              margin-left: 70px;
+              width: 500px;
+              margin-right: 50px;
+            
+             }
+             .My_skills .container .texts .pc p{
+              line-height: 4;
+              /* text-align: center; */
+              margin-top: 60px;
+              font-weight: bolder;
+              font-size: large;
+            }
+            .My_skills  .skilis{
+              flex: 1;
+             }
+             .skilis .progress{
+              padding: 10px 0;
+              /* margin: 10px 0; */
+              margin-top: 50px;
+              background-color:pink;
+            }
+            .My_Skills  .skilis .progress h4{
+              padding: 25px 0 ;
+              
+            }
+            .prog{
+              width: 80%;
+              height: 20px;
+              background-color:rgb(168, 97, 235);
+              position: relative;
+            }
+            .skilis .progress .prog::before{
+              content: attr(data-progres);
+              position: absolute;
+               color: var(--main-color); 
+                right: 0px; 
+               top: -35px;
+               padding: 2px 7px;
+               border: 2px solid var(--main-color);
+               border-radius: 5px;
+               z-index: 1;
+            }
+    
+
+
+
+   
+
+/* ***************************************** */
+/* project */
+.Project{
+     padding-top: 40px;
+  }
+
+.cont{
+  display: flex;
+   justify-content:center;
+   flex-direction: row;
+   flex-wrap: wrap; 
+   margin-top: 30px;
+}
+
+.box{
+  /* padding: 2px;  */
+ background-color: rgb(242, 185, 242);
+ border: 1px solid  rgba(232, 72, 72, 0.466);
+ /* box-shadow: inset 0px 5px 5px 0px rgb(0 0 0 / 13%); */
+ min-height: 14em;
+width: 23em;
+  border-radius: 10px; 
+margin: 10px;
+ transition:0.7s ease ;
+
+}
+.box:hover{
+ transform: scale(1.1);
+}
+
+ /*  */
+ .Project .cont .box .image img{
+   /* height:4em; */
+   width: 100%;
+}
+.Project .cont .box  a{
+  text-decoration: none;
+}
+   .box {
+text-align: center;
+   }
+ 
+
+/* ****************************************************** */
+
+
+.customers {
+  /* background-color:pink; */
+  padding: 40px;
+}
+
+.customers .conten{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+gap: 50px;
+}
+.customers .conten .bo{
+  width: 300px;
+}
+.customers .conten .bo .gg{
+  margin: 0 auto;
+  width: 150px;
+  height: 150PX;
+  border: 1px solid darkmagenta;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* ********************************** */
+.email{
+  background-color:pink;
+     padding: 40px;
+  }
+  .Request {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 20px;
+ }
+ .email .Request  .content{
+  display: flex;
+ align-items: center;
+  gap: 30px;
+ }
+  .content .con{
+  max-width: 50%;
+  padding-left: 100px;
+  padding-top: 70px;
+ }
+ .email .Request .input{
+  width: 100%;
+  border:2px solid blueviolet;
+  background-color: #eeeeee;
+  padding: 15px ; 
+  margin-bottom: 40px ;
+
+}
+.email .Request  textarea{
+  height: 330px;
+  flex: 1;
+  padding-right: 200px;
+  background-color:#eeeeee ;
+}
+.email .Request .btn{
+  width:60%;
+  border:2px solid blueviolet;
+  background-color: blueviolet;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.2em;
+  padding: 15px; 
+  margin-left: 90px;
+ }
+
+ 
+
+
+.btn:hover{
+  letter-spacing: .2rem;
+}
+
+
+.Contact_Us hr{
+  height: 5px;
+  background-color: darkmagenta;
+}
+
+.btn{
+  width: 200px;
+}
+.input{
+  width: 300px;
+}
+
+
+.footer{
+  padding: 10px;
+  background-color: rgb(134, 59, 205);
+ 
+  color: pink;
+ }
+ 
+  .footer .foot{
+    text-align: center;
+margin-bottom: 10px;
+margin-top: 5px;
+    font-size: 25px;
+  } 
+
+  .footer .foto{
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+
+  }
+  .footer .foto a{
+    margin-left: 15px;
+  }
+  .footer .foto a:hover{
+    scale: 1.3;
+  }
+ /* end footer   */
+ .top{
+   background-color: pink;
+   /* color: blueviolet; */
+   padding: 7px;
+   position: fixed;
+   bottom: 6px;
+   right: 6px;
+    z-index: 10;
+    border: 1px solid  blueviolet ;
+ } 
+ .top a{
+   text-decoration: none;
+   color: blueviolet;
+   font-size: large;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+.email{
+  background-color:pink;
+     padding: 40px;
+  }
+  .Request {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 20px;
+ }
+ .email .Request  .content{
+  display: flex;
+ align-items: center;
+  gap: 30px;
+ }
+  .content .con{
+  max-width: 50%;
+  padding-left: 100px;
+  padding-top: 70px;
+ }
+ .email .Request .input{
+  width: 100%;
+  border:2px solid blueviolet;
+  background-color: #eeeeee;
+  padding: 15px ; 
+  margin-bottom: 40px ;
+
+}
+.email .Request  textarea{
+  height: 330px;
+  flex: 1;
+  padding-right: 200px;
+  background-color:#eeeeee ;
+}
+.email .Request .btn{
+  width:60%;
+  border:2px solid blueviolet;
+  background-color: blueviolet;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.2em;
+  padding: 15px; 
+  margin-left: 90px;
+ }
+
+
+
+.Contact_Us hr{
+  height: 5px;
+  background-color: darkmagenta;
+}
+
+.btn{
+  width: 200px;
+}
+.input{
+  width: 300px;
+}
